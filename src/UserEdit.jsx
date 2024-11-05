@@ -37,7 +37,7 @@ function UserEdit() {
             } else if (values.username.length < 5) {
                 errors.username = "Name shouldn't be less than 3 letters";
             } else if (values.username.length > 25) {
-                errors.username = "Name shouldn't be more than 20 letters";
+                errors.username = "Name shouldn't be more than 20 characters";
             }
 
             if (!values.email) {

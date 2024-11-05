@@ -10,6 +10,7 @@ function UserCreate() {
   const [cities, setCities] = useState([]);
   const navigate = useNavigate();
 
+
   useEffect(() => {
     // Fetch countries on component mount from local db.json
     fetchCountries();

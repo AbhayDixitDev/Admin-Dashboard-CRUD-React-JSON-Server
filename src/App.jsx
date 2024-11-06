@@ -11,12 +11,14 @@ import Portal from './Portal';
 import UserCreate from './UserCreate';
 import UserView from './UserView';
 import UserEdit from './UserEdit';
+import Forget from './Forget';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Login />} />
+        <Route path='/forget' element={<Forget />} />
 
         <Route path='/portal' element={<Portal />}>
           <Route path='dashboard' element={<Dashboard />} />

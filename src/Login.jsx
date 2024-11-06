@@ -21,7 +21,7 @@ function Login() {
                     username: user.username,
                     email: user.email
                 }));
-                navigate("/portal");
+                navigate("/portal/user-list");
             } else {
                 const wantToRegister = window.confirm("Invalid credentials. Would you like to register?");
                 if (wantToRegister) {
@@ -82,6 +82,9 @@ function Login() {
                                         <hr />
                                         <div className="text-center">
                                             <Link className="small" to="/portal/create-user">Create an Account!</Link>
+                                        </div>
+                                        <div className="text-center mt-3">
+                                            <Link className="small" to="/forget">Forgot Account Details?</Link>
                                         </div>
                                     </div>
                                 </div>
